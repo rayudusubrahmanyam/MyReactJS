@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactDOM from "react-dom";
 
 class Master extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class Master extends Component {
     this.setState({
       textvalue: ""
     });
+    ReactDOM.findDOMNode(this.refs.myInput).focus();
   }
   updateState(e) {
     this.setState({
@@ -22,7 +24,11 @@ class Master extends Component {
     return (
       <div>
         <h1>Refs Example </h1>
-        <input value={this.state.textvalue} onChange={this.updateState} />
+        <input
+          value={this.state.textvalue}
+          onChange={this.updateState}
+          ref="myInput"
+        />
         <br />
         <button onClick={this.clearText}> Clear Text </button>
         <br />

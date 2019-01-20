@@ -6,6 +6,7 @@ import Grandparent from "./Components/ParentChild/grandparent";
 import Fragmentexam from "./Components/Fragments";
 import Parentcomp from "./Components/compHooks";
 import Refsexam from "./Components/Refsexam";
+import Keysexam from "./Components/Keys";
 
 import "./styles.css";
 
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       <h1>ReactJS Application</h1>
       <h2>Get Start editing to see some magic happen!</h2>
-      <Refsexam />
+      <Keysexam />
     </div>
   );
 }
