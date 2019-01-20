@@ -19,12 +19,13 @@ class Grandparent extends Component {
     //this.setState({ newState });
   };
 
-  changeText = event => {
+  changeText = e => {
     //let newState = Object.assign({}, this.state);
     //newState.name = "Puneeth";
-    console.log(event.traget.value);
+    //console.log(event.traget.value);
+    //alert("test");
     this.setState({
-      name: event.traget.value
+      name: "test"
     });
     //this.setState({ newState });
   };
@@ -46,11 +47,10 @@ class Grandparent extends Component {
         <h1>{this.state.name}</h1>
 
         <input type="text" onChange={this.changeText} value={this.state.name} />
-        {/*<Parent
+        <Parent
           name={this.state.name}
           changeName={this.changeName.bind(this)}
         />
-        */}
       </div>
     );
   }

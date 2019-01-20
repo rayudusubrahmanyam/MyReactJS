@@ -13,7 +13,8 @@ class Parent extends Component {
           {" "}
           Click Me
         </button>
-        <Child name={this.props.name} />
+
+        <Child name={this.props.name} changeName={this.props.changeName} />
       </div>
     );
   }
