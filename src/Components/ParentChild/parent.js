@@ -6,6 +6,13 @@ class Parent extends Component {
       <div>
         <h1> Parent </h1>
         <h2> {this.props.name}</h2>
+        <button
+          onClick={this.props.changeName.bind(this, "Puneeth")}
+          value="Click Me"
+        >
+          {" "}
+          Click Me
+        </button>
         <Child name={this.props.name} />
       </div>
     );

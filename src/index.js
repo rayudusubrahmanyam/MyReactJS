@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Jsxexam, { Listcomp } from "./Components/Jsxexample";
 import Clock from "./Components/Clock";
 import Grandparent from "./Components/ParentChild/grandparent";
+import Fragmentexam from "./Components/Fragments";
 
 import "./styles.css";
 
@@ -12,6 +13,7 @@ function App() {
       <h1>ReactJS Application</h1>
       <h2>Get Start editing to see some magic happen!</h2>
       <Grandparent />
+      <Fragmentexam />
     </div>
   );
 }
