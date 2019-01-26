@@ -12,17 +12,19 @@ import Keysexam from "./Components/Keys";
 import Home from "./Components/Routers/Home";
 import "./styles.css";
 
+import Portal from "./Components/Advanced/Portal";
+
 function App() {
   return (
     <Router>
       <div className="App">
         <h1>ReactJS Application</h1>
 
-        <Home />
+        <Portal />
       </div>
     </Router>
   );
 }
 
 //ReactDOM.render(<Clock />, document.getElementById("root"));
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Portal />, document.getElementById("root"));
